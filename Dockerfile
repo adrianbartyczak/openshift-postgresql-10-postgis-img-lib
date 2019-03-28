@@ -192,7 +192,7 @@ RUN chown $OPENSHIFT_ORIGIN_USER_ID:$OPENSHIFT_ORIGIN_USER_ID \
 # /usr/pgsql-10/bin/.
 RUN ln -sf /usr/pgsql-10/bin/psql /usr/bin/psql && \
     ln -sf /usr/pgsql-10/bin/pg_dump /usr/bin/pg_dump && \
-    ln -sf /usr/pgsql-10/bin/pg_restore /usr/bin/pg_restore && \
+    ln -sf /usr/pgsql-10/bin/pg_restore /usr/bin/pg_restore
 
 # Add the user OpenShift Origin will run the image built by this Dockerfile to
 # the system. This is required because PostgreSQL executables, such as psql and
